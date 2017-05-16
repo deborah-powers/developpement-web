@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head>
+<title>Les jardins d'Angers</title>
+<link rel='stylesheet' href='css-github.css'>
+<script type='text/javascript' src='///C:/Users/user/Documents/dw-deborah.js'></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js'></script>
+<meta name='viewport' content="width=device-width;initial-scale=1.0">
+<style>
+figure {
+	display: none;
+	}
+</style><script>
+// fonction jquery pour les photos d'Angers
+$(document).ready(function(){
+	ListFig = $('figure');
+	CurrentPos =0;
+	$('button#avant').click(function(){
+		id= ListFig [CurrentPos].id;
+		$('#'+id).hide();
+		CurrentPos = CurrentPos +1;
+		if (CurrentPos >= ListFig.length){ CurrentPos =0;}
+		id= ListFig [CurrentPos].id;
+		$('#'+id).slideToggle();
+		});
+	$('button#arriere').click(function(){
+		id= ListFig [CurrentPos].id;
+		$('#'+id).hide();
+		CurrentPos = CurrentPos -1;
+		if (CurrentPos <0){ CurrentPos = ListFig.length -1;}
+		id= ListFig [CurrentPos].id;
+		$('#'+id).slideToggle();
+		});
+	});
+</script></head><body>
+<h1>Les jardins d'Angers</h1>
+<p>Ces photos ont été prise dans les parcs autours d'Angers, en fin d'hiver et au printemps 2016.</p>
+<p>Ce slide à été réalisé avec jquery.</p>
+<button id='arriere'><</button><button id='avant'>></button>
+<figure id='banc'><figcaption class='titre'>un banc au-dessus de la ville</figcaption>
+<figcaption>Parc de la Garenne</figcaption>
+<img alt='un banc au-dessus de la ville' src='https://lh3.googleusercontent.com/lQfSTrdBUNIZw8VRzES0y3Pt9QbgPH5baNYGq90YxYztoAEjkcqeDeWQxFk7Oy5LmxYm0Iw2i027WHEyn8389t9g1X64UGdHoN-ljNpg2DcuTocrC0L_M2Fe5cIkuQ3NUfPVeUVa9t4CuJTJzFmR5D332Mv0ASu_igRNZTe85ihqOav7OIOYYns1ew9eF1b4kgCqDKmFvcdP-d2SaVvX6CCHwSqXYSb6HUqlSxwlOT5odhYi9iLxya8nlZ8v_kc0-Gl7irNGO2ntivjy2ZwdJtuAx2k4GU0jbJgk6JH-vffO8hFU-C8o2f1NqVLPrNho6i1HsTsWjGzTze5qaVGT4RcY8-5NBBlqSPpXTEZg7p2Hv4iypdSMyHB12yrtJM8VcyDgVeLlHlAhh3y0rqK-g0ZpIuAYUc7PC1F8-E4Tpx7zP9t0QlaAXVjP8wMlnh0ZgUSCYAVFGczDzzVIfKl1alpsyc9dL6enSgjQUALgMmGdcYc7GWpNipBxpP4J0rC1WGvQXKyBczVP9FVJ-__HO9bkpxRLxn4rXa4K63tYGyJA2m6Zpz1CfdGGIZiDA2LAOWnpqaYGyG0jdLGaT2_KbneBvOwaRLwvu_68YDZwG-H7XXZrpWMze9EFeE_ViYdLQ2qfcKySlO35Yz-5fuDlqEIT7B5KTGKl-7DQg7FlUA=w734-h447-no'/>
+</figure>
+<figure id='chateau'><figcaption class='titre'>le chateau sous le soleil</figcaption>
+<figcaption>Chateau</figcaption>
+<img alt='le chateau sous le soleil' src='https://lh3.googleusercontent.com/9dk6_MKz8yTp6vDdDHumz3ZnqJYTOBEBGOhxFP2Jo6VToMcOKgw4Cm-Bj0Qw784n7fns9yfi1P_fiLb1yaL3h7U_trFeWiXTg_z5LGTqTLqYH4Wrkv2QWQBmWDjVJOFtsCRk_kB5Bb6OKwtjbNTNROXpeiYJBJWpwqalfkm_32alipfxx-i-h_7V5APYv_-zUIsQxRIB0Udbao8-X-c_6kVnkNe_imNno3KRnyYhU8cpuBXJYDRoY2szU7Nbk6S-cdqXNVl3c3PVACaKG3miMNRdHnjNaB0Or4OmnEVEnQzc8KZxZ5hlsEEmNeXoeeAXVOpTNPXR-kJ5PoGpFmsEYL6RkMR3N3d8Qbg72cQhvCZVNn6_5Acltrb1Lmi2-7m6Fvcn3fbDICMKob683KAsREsv9a6iBDm8Q5WqTzFRMFwuswjzjNabTImdlfjpRnbNPjIQt9YXN5WiyG8xL3E72s3p9L6rcX5xE6dooQsv63c4p69vl55dyWBKq7zVPiRwgc172anm18rCNkLO56pb-8xQgqyg2NoDrz0INuGoZIYFSEpz27cpic4XsN-qfr5h4lYAGCe183DsWnTEkGHuXOjbDb22MxAhpMMrDEyNQH8xGTZJwYMyLHfcmBOh2Apiadu5jECClkFqqCd8T6_mgBjMvlc-Zk-_EapWUzWaBQ=w879-h659-no'/>
+</figure>
+<figure id='remparts'><figcaption class='titre'>les remparts au coucher du soleil</figcaption>
+<figcaption>Chateau</figcaption>
+<img alt='les remparts au coucher du soleil' src='https://lh3.googleusercontent.com/orWE-Smj0wCxdWAdiUCad2atG9Stj_Qvic3pfA6v141KZo-IE5lctI4EN23aQwkivvwbeS0J2SewHfJf2_IYaH9BN64RJZ2-vcafeRfojv0dQhcWvIfDWgZoC675o7m1-10DmbmxZFTFJl2bcQu6FFP4p84ohiGEZlcEml17EF78XzwWfJPqce5Q5v1Nnp1MIR6qfw5T-ERvKd0WFqyPdIak05zgLF1xXQ2NEEdRkriEjKvi3v1VWYd5mwjQWuOC_5Bo4dQL_RtGT5_JVDFcdZxXKFDR9yiWhbFYRgMy3VnvUZ-Q4Md-gUtFxfLkxQxWX1LDBoj8NlDNxP-IMG_ZNnFzIdaREWyAM7a2yHCaf0weilsiP3jYjMXYbuJFwi7cT5SIWPuRiGz8lO5hUCveLauZHg9H5XIpzd85pGBtyKTNmY_9FhU5jVJiUvdhkDmrEZCQ1tn_WkoCtMII2BfYYzfJl3MZGu9j3wL7UA5hyI7G0NdWsyq4G5BuV2KlexDmlYOBaTmDYDXmrhh_hhFHBe12sXqwblPmXT4qsf9e7rf1rVeHzTuAp4tBUoaKIhI197KLj79CEEeInhIGSl4pbv6Rk4LGRT2FgLsCVMi22bsy7AaYSFESpoCY6CdM-9Bgp5zVlTaYhyDcDG4VerJgBG_rae5-Lmu90C2i52NqlQ=w879-h659-no'/>
+</figure>
+<figure id='heron'><figcaption class='titre'>le héron</figcaption>
+<figcaption>Parc Balzac</figcaption>
+<img alt='le héron' src='https://lh3.googleusercontent.com/d5Tmppjoi3eD0cGqHSdKnmoQhmeZsCJRgkxRdlyItV_Ve55rF6GZf4Hi6QtRMiFPiVWHdtWLb3sqG8Gq6xdmzce2WX5mxHRcPoGM-zXaYq2zmJ-blq7G1teBg_SAyK-hmUxWi25GLpMxc5BPO_Ce92lEHYrLyA_yWlnRxiKYDLRoO6CTG-25hSQWob8GynBsOiQKI_VviPMI5aqCZ2mNLm9rySmUsc4JH-qfUDPjVjgqkIRyf9TQin7gex8sRiLLiLJP7NwDSSgzevgyKbtaQ_crzgv8JJ6Py0Y9nsdA24TVlVUfz_gQ6AXd32fWndd6cqd0smyqzdVsVwk9GkZFkXLmi9lbgxZ6jbT6PJtssjJPHQ-Y-AZ-ui3CC2cZpa0TEfiMq8no8K-aP4kXUnLeC22JSqP3MbtNcFvNG2kn-oG_qZqQOGxj-qz4cQtispNVauMO85aX3dY9lcwRHy2CJ7w1JQafeqWiMOkQK_2VEPxW5JK_tptPMsQj_iZNdoDWPypPGXg7cwuFRyClHEnII3VOv_WnmKurYg9NqGYUFCXh6ICU4jUf8JUwH2runvXS5TLZOrNupoIkWJpMyaikowLa8zYLiIzl7_BFViLJqBpmtx6_duBUIVYEpERSshWwzHaca8NCtMWX43crcrT7MF6gyancDy7DgdP6TdV2Kw=w811-h659-no'/>
+</figure>
+<figure id='coccinelle'><figcaption class='titre'>une coccinelle sous la rosée</figcaption>
+<figcaption>Beaucouzé</figcaption>
+<img alt='une coccinelle sous la rosée' src='https://lh3.googleusercontent.com/mzks6Xhj9SaA0WUGw9AoVuyhcNMc52XN-CZSeZWXDhDFPUiXasTc6eTkAk_Cmc6RvDcoEn5u00iI37Pk76F_bSFQlDocR5aPkHKYmF-YN39RNmmjXy2OqSPy_CsVDApHoyiKwH7fse8hYIr0YJuv2XlQQyr96Z7q3EFt-APZDYPtszHOUluR_iciMp82xKpAcA2QQKqOIfsrgzorVq2P3mgSYkgTfHQEUkltpyDuIFGqGW9nOKbTRRdMzAocDMIbMVa-TvL4X8TcsnqwuNirsKGB14EOSbW7lssSFjUaJZyKyhg0ZWIEoPnelyUGX0yWwFDo0duaFLhkfWBCcMlEOtv6MM0QIOTj8WQSzAsHoi7qn7-CX5hPfb_MotZWrcXra36y47xoZWTSh6V53etHPKOzL8497uVPxfs4GwjhmP3hlqLbc0LwS9YYy7i8Ghg5nMPQM4tyXoakRPt1IfjvrFeovK_U0GD6zf_dQq7_4dx6H-GcgnuJJ-x6pW9eYkoeG1rap44NRC_dDZJpUuDmgU3Z8ydHOsiYV41HMjDCFxuvnAkzI_YD0PZQxxczKYoOIMCIOx2ZHEipfQaPKqW1KcUcbCO-Qrd1a-L6Ai1BYZpHscs4rQfoojvJE_m5i3N--CPEimc5PTiH4EInhivFDlxf_JAatVSUwsrvEB4sfg=w495-h659-no'/>
+</figure>
+<figure id='biquettes'><figcaption class='titre'>les biquettes</figcaption>
+<figcaption>Parc de la Garenne</figcaption>
+<img alt='les biquettes' src='https://lh3.googleusercontent.com/Hv5DpM1Q0a8Ty9YWC4Jnjj3foA0QV5YjlIhWSVuYW0Awo3m7abRzjcusmbqD2Ar4c1ar0MbeZkcbrY1ItjSm5lidbw7UkwxReZI68CCCyRCidHWBlCs0ZxJZBROogJ4E37YANjDpmlXZI-3ZUpkAo-q6mVMvjSjMjVWkDAzK84DGhMSuYdouektL2_PrK0lJdnUgXJ-lGm_YC0jnLc-riyFMKtcBqO4GWs2QMQehBrAZSzMfdzmChYzxIL9end7Dcb6UONZ-to4foUQ7HvmyM7Ml6zORann2UTdAZV28CZQAbZ8Bqth8ezueBZZdvZJ9UZ2RWUM3PSGAilxzlZRFTouZw79rc16--qXRwYXCuFQ1BnGc1AnRpQ9m9wc31etLkKRFQuUwzv1U6TCJ5t5XdsfRobinDop4OHcIX3wW33_ay75BQuFecYIS8BzNu4bcI5tU0KJhxlTIcIuxL3hZJQ5at2jddBYKFrhuXl6D1QpA1XT2cc0LQWq3WVM0yET_J1SyrlFkrjDci24WO-yDfjpBdNoyQfNSMwA_vWK302lozDAPdUtlz7Y12mI8qlEo6HBHvSZuQYtPQPW31JfZeA64ao-ZRvWnhLgJAahcnx4KOdhUSeqWBrZktb8G0u76Njzxi8dJM226FH05XJif4EjnROZkOdkn-wfpMPUDeQ=w731-h659-no'/>
+</figure>
+<figure id='retenue-eau'><figcaption class='titre'>la retenue d'eau</figcaption>
+<figcaption>Parc Balzac</figcaption>
+<img alt="la retenue d'eau" src='https://lh3.googleusercontent.com/jbcg3DyqrM0shFxnmh6fF_HIRrJ9y2a1QAAL6pcaGwro4l-YW2bJFa0Fu955NKJxd-Tpcckqyb7gly4EJrkB0K6DoWHkq4O8R7Aghc_4sOibYFddtpRMVguc6bH4FDAGXXhswkIRPVcysxsXu2WthbNiW2s9s7ptdkh5v3kyFk4Z3Y5VFN205GQnWj0aKM-odX9VBR9n9b6KAltxpPVza9TtPx51e1QCXjZPq4SLcFkEUctqdqcUwADPmUmh7ZG9Z_wpLmKvXh-1RUCqCLlupHxTRIvUkYhDxELGozEMO0p9FSSnqWXz4GoJ1EHFxXG5YEKhs8xDYHccEiicHrQqf9uFiDWSIFf_dyXfJ4zWTScpOf7xzeiERs1i_2pEyT9vX7kGMJ_wqVDldHP273LfgVUdxuu-ToHpMRqtixw3AqiY2aEJie4Ks2YrwyLRagjTugfw3UtiWmDNmtDcH1nGyfb5VYrBPGS-lipKPuceQ4IXREXd4-_RokyvSlwvBsfWi8sBe8GcvjT_khjgmxrfPw01SmT01r2yxc7AQqN_gfQYm_fAl58cXA6reIB5ybPH2OTX6vK7zhBOi1-MSGeaKVhWpCANT9nIUbN1byzpdmaq3_KJWchAwgRgiW0lasxuMeLCXC--1IkjVaOKuRFKrPQYBKqUueE6Mk-wrd81xg=w1017-h659-no'/>
+</figure>
+<figure id='chenilles'><figcaption class='titre'>des chenilles processionnaires</figcaption>
+<figcaption>Jardin des plantes</figcaption>
+<img alt='des chenilles processionnaires' src='https://lh3.googleusercontent.com/0Y-Ezm-nvy5qEIec-nNc-BYkpqgEcNS-ZXTJpo8NtToZgHAtj-cEGMLIMufPJPgCe32BXfw02cGq1_EgJirDawmcOv5ObINgZPyzahA0iFjOktapZ13qG1OksIzVosfo9kEgIGnIw5zulj8YiykC35O-5DVaNlBae50VcRJC61K2-_atd6ZndzNQfAgbUYlNUD3Cf3cME2cI2K31a6NgmBX616GZy8Mup64PPd-JLRQkwZWX0FtEJ1R2LjDdKWXLYEjuWFMhG9lLnhk6l2RUaGLXoaibeDsDUm9dLMkYAzUtgI1Mm26ldShaKM0o7mkG4c01NQ4DrvzYIa7tzyusOpZjObYoJSLZdMNRm1sfbTivO0xGiHnxgrbuyBEV4oQNmvw2nlFCWvZ-f12CMRfUYekMLqeWjMnjLbRzW5WaPPl32ymvhmY60-CUSfjY-GXYKGdjU_owWeVnKdDNxNpWDwkRu-r4JtzYlMnjOnCG4lkG-FVL1-SMvVV1lvJIj7wLtlckcZb9ERcvtM6S3yCvMdQyS04x3kFwbAd2QuCWZE2dMBbDu5AyiAaxBNYn2Ouo3522uqt3TcHEpyCszUvplI9Rpx59gMIJBSP0MkWachxni_reAK49Oa6KhpOJDk8AX1cHZ0UZmbaLb3mJIlZANw4ye1V7mG5MGmv5v-F3XQ=w1169-h659-no'/>
+</figure>
+<figure id='stmaurice'><figcaption class='titre'>l'église st Maurice de nuit</figcaption>
+<figcaption>Angers</figcaption>
+<img alt="l'église st Maurice de nuit" src='https://lh3.googleusercontent.com/7wLBisitTmP6MjMqPI2RJeVYqryiE0vwNDumqpT0BU5HH1-qf-wB8ewS3Z6QoDKzJi-AycY7ujBVkzwGEPHiuhrATo9eyNgcuCj_ErH49r3VaaIsXsWYlFnO4Z3Kl3_qkEcSM4jeB71bBUV8X8lRl_K-m3ELHDKxZQahxyltc2mGQz8vC06nfWqUwrpv1Jgbqs2ysCRxHYrnV9BJY4Ft3o2jq-YCzEYoAdKrgPx4s_XKKlW6JuHnXmaAWQl_ohdIheD3Ss7hFCrrr1YXlef7jG3BjvKTVVKmWxNAD-uibLVSN2vSpNZUCRC1auMVVj5SV89MXXhjPG4yt5x-L1G-ecxTigPg_Fqb1coNM3WwBSykKBBXZN-jUnfvY5yjJqR7fvmAaPpZvR7mHkz-UOUOuIyYoRF95EpDyaSwfhVShlu167oiTgWjnWJS4d5tmn5MHWr5VuT6NDKNiWQQ_P-NTzVfnVCYTkZG2W2C7b0tyQBap7SW_0yMf_iOtP5iI5PR855eV_CVXXuct-KZg85R8KLB5pc-IEwq154WBv_cBfltjSU28WqYN4nqTrK2WAAOqX6YinrPkB33DmBRYn66r9bLTKyWhqG1xdBge-VEFIOxmVAbi4yHWugPTfqAdqoGEwmBbX9aA7ekQv7F4qrzIszUHF7XT1bbputJGgXwdA=w640-h387-no'/>
+</figure>
+</body></html>

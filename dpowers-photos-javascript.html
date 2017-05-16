@@ -1,0 +1,90 @@
+<!DOCTYPE html><html><head>
+<title>Les parcs de Fontainebleau</title>
+<link rel='stylesheet' href='css-github.css'>
+<script type='text/javascript' src='///C:/Users/user/Documents/dw-deborah.js'></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js'></script>
+<meta name='viewport' content="width=device-width;initial-scale=1.0">
+<style>
+figure {
+	display: none;
+	}
+</style></head><body>
+<!--
+pour mettre dans github
+montrer mes compétences en js
+faire un caroussel
+les photos doivent être visibles de tous les ordis -> les prendre sur mon google photo
+-->
+<h1>Les parcs de Fontainebleau</h1>
+<p>Ces photos ont été prise dans les parcs de Fontainebleau.</p>
+<p>Ce slide à été réalisé en javascript pur.</p>
+<button onclick='DefileFlecheArriere()'><</button><button onclick='DefileFlecheAvant()'>></button>
+
+<figure id='mouche-miel'><figcaption class='titre'>Une mouche à miel</figcaption>
+<figcaption>Avon, automne 2014</figcaption>
+<img alt='une mouche à miel' src='https://lh3.googleusercontent.com/-vYtYZ4Nl0upcdyuSyN99vX3zU_xn5-FPztcJsGVyziNiAO9nz_AzkeKhWOzlLsfg4pDLr22HUO0Heey3kgXkGMEQ5EhyZtLfrvIL0xfrT-yT4YXHNS2dHldwTTPGsTy4sdOfitMVn_Gc2bi2uNWHT3JUpQgXjZDpcVNMmVB_Cjo-6kvSmUzdZF20_vQQHj99pPsC8JOp--_MYwLoflkwLl7lYsMeXdmwbOqBgeGvGrGsSa3xx73bbUP7mFdslXFslteZ_zDaKKaChPxowuUkqYzPmxMdy55W6r33ygNjScdkALcG-aJPndhUxUGSnVtbsPcQwdvvQnIwBe_uNI6VF_Txhl3v8vCW_cKwoRSgzEubYTaoeULyeoA-P6F1HlLyqLsbmV7aQJzI5c7-1wpxFK8dD7gf3gzV4WQoXKDVYgoNZI4AnprIjNKDQIc9vtEwf133sIJrR3Vi5DrLbQmziF-o3JC718_ChYHdvnURQW0yWd67MPsHiSbegtsdFzvhOkbk6zv5Ctz1GOLBJ_ti3o-FxPCJXsUtBdc3gYJGGS8RJ183V4pcH_aTj-Xo6uhlmtl8bNhuYXFz2hAysAkiP0y85QkUwx7ObXX49Ygv_qnlsz3B1V4=w723-h659-no'/>
+</figure>
+<figure id='insecte-pluie'><figcaption class='titre'>Insecte inconnu</figcaption>
+<figcaption>Avon, printemps 2015. On observe des blooms de ces insectes certains étés</figcaption>
+<img alt='insecte inconnu' src='https://lh3.googleusercontent.com/pEdbHINM-P-Hgfgmj-lAT99uVWkwh2RYT3OSFyusQ3tMTkMhZk1Y51o582sTezgPWA5DnS_VpkPgCTUVcJUYGcnyAr2nbmymaIxPFYL7Qlz_wHfzrrziP45hjPly0sQiwDcxsdWZifvkcQ_J0ja4Rk17EJgetof8KwrcPwA0J2JeafE32xlwITK9YFWZT9hnSRVF6olb_nYaA2xXxFHft2hXfZpBJ1BYN7YmQsBdxf_XfnvDByohptOIWrGM9SDL2K_RYeBsNKQEW512k0CMj4_ucf1hMLS07drfnQaAbvO7CFlH2grV_iPlBNvSbwfA_KeYxyxClqkRGPYaWwdUyxxTwvrKrgMIZdcph8J8ZjzqJ31N20ak1Eg0BykNodqnBu3Gpi71MfMGsco2ceEgsx_9YAQQdIutJ4zEmjdXRnYOBy0Z70Ixp2QTum7WRLhVT9t35qimmtsUkPcEOGWYGoLS7lZ7TbMIOgb8mAkMRs3KxYzWXQy8NSIjjf7h6rS02ZGZX7OyD5J0EeblvXaaLVAEVt_kaleo-dLRoXsESVki9-mBSlY9cqa7y4TP4b-0CI08krAyXcDwqTGtSzLLML1-DxNN1XDgsG1IxyfFmt3FZmw4dnk1=w705-h425-no'/>
+</figure>
+<figure id='coccinelle-orange'><figcaption class='titre'>Coccinelle orange</figcaption>
+<figcaption>Parc du Canal, automne 2016</figcaption>
+<img alt='une coccinelle orange' src='https://lh3.googleusercontent.com/EXOtfYG_Bab2V7Op2Y8FsT-WCe_0PHIqDtusgeSgr8SWpkP2Q17sflAq3UbyoVNw_iiU7wSXrNw3ktww5mnix6ePFD-ajNuNXyUvN1w_25u5BVCsSJJ0NW7B-6GKCM_IL1cq55UY64HM9zHTYlR_Y_D5jkWckti_t_-xpHpsgeKIC5QXLgE7HtZIBdplAiH0zvv3b9h_Np4yZwTqgPCKbzRz2ZxuLVhIVH6b-sdI2ei8JO3eS-Zgo2Ur9HFjVO1cqJsPeEMcjEWCfo8jAVK3nbymvssVL3A6-_g1xwr98wPaXmy8vT4xlfazGWSVJHRLDTvULhJNMX3isaVEDqIVTOTouDo1pvHYlD9lTjD-6ox_Ug--jGFyDoyJ-jrSsFYKP_nGo_YPEo81tFPHHsKqJIX9E1gxnW-kmdXNGLqlhHcJVZdG4XgUBbfbw8vXj11vYjFtcygWdYgqJS_qBFkP9z5WzOzF2dmF51HPPF3ayHeMHRGGLEb297i6D3DkSAqZgW1iAXQ_6WMPQWI4H_TyEaY_5v9ErcRa3OeTRKbB_FL2S0MMsIKfw_pWrPdwzcHGT7RB5YRetyoDmp4vu8HrUXGlxZmvbdPjwsgCsNgdG2hRykyB-xLz=w1006-h366-no'/>
+</figure>
+<figure id='coccinelle-noire'><figcaption class='titre'>Coccinelle noire</figcaption>
+<figcaption>Avon, Noël 2016</figcaption>
+<img alt='une coccinelle noire' src='https://lh3.googleusercontent.com/QTc5ncCxKcti3iEdHUXKO4khy7rhfzyMN8_1BCGtv66sCvUyUgDBo2RCRFnimMPYeTmC3zd1wCwGT2il2C0oywebRf-Ooyp0pRGWBpv8JlnW9G0y_uPBwnJQWCyd_UyugDzIkQB5dgzCYhUmuv6uNJsp00riAdLxYKtwUGowOD_N51kLGq15CCKw9t7dfY9DhGuHtqE1TPB1GXUlOAmGzpI5h2wPkzjvZ-v8x421gfC2rukALW53PVhXW1HgSgIpypMOknh2tHtajHRuOegQjhXSoEsaXBCzi0fYxSVYYoxvPZHz9Ckw8aKBfZ4wH3gZQ_v3I2Wc7l_KradEUgRM2jQWXMjmP065fvW9WWpF-K6IZ8cFx-mxuwP6mpvejfu84-s3xokTD344oihFQpn1BR8V5e3B_INj9D_SN9HgfvG8pnKEP4nD-oO3kdmX_kPml0j5sZc-ZduYQl5z_gxbi8HbUoa2D6G2mEIwjF3vpL9MIqpsLXFpes664edcy7wPCw2wXoC5Mh0nVZfn0hgL6JwjpylM_20sCdkdFzhYoujnvKjglXZ3uKe6PvGCw8TMRJjHEHhcha9YvTCF8UPM4jzLGLC0hwCYVQIb5l8w-DwMNlvliRc0=w832-h659-no'/>
+</figure>
+<figure id='chateau-gp'><figcaption class='titre'>Le chateau de Fontainebleau</figcaption>
+<figcaption>Grand parterre, hiver 2016/2017</figcaption>
+<img alt='le chateau dans la lumière de la fin du jour' src='https://lh3.googleusercontent.com/VQ8E_mSwLRg7y2uMVDMFCrrFCFoLlNBdoNoPF5M2waWgcs_iEkfpeWYELLfQNuWyWrK3MyxkTXa9vEPG_Uy4FOxHOeG3cHtwjyZ30N46qFphsj1z_dcL8-WTVVvhEMiYIuEwZ94R5qWZ66CXuyfXqnw9GwKcAnJjNxnpQpQKRjalgySvRg-4hPGl-jmnpD4BegskcDaQZqP8tm26BP5U6ikrlB1zM36cH75XiH6z0RZNTBv9xXkYhyCHTIrc1GGtd2wqEYysIEQ4WwusVP_zIgo9USPS7JcDzcRzypEXnp5Q7yFSifgp2ZvF1yA_CqpWN0yU24EzXsX3-CYS4cgJuD7lKv0LCxpCoRftIMD1WyMOtUmVLTJY5HS_Hi4TAO66v9s_LxyVkuzdlxRP6DIxb8dcWvQFH9k5iYpTjaN_x6eUz13L3rTw0esheq_EzwaNbryWWjuK4vNZ_ZkNCJEYz-ONjYOURqYLXEcUrUr762QoV6jf7EBkl_aehHJmMv_5MXQy2Ndfv4sIN8Hi3GsMsOLRMh0C7qAg2MOEtNTn9RmCJ5tKa1jP5GQ1b8Yb9Ni6DtP-dwhB6jHw72-UslmzQ7kyvi7KeQe-J933fD6seIjB7LZj3Pcz=w1006-h416-no'/>
+</figure>
+<figure id='zebrures'><figcaption class='titre'>Les zébrures</figcaption>
+<figcaption>Parc du Canal, hiver 2016/2017</figcaption>
+<img alt='des rayures d'arbres et d'ombres' src='https://lh3.googleusercontent.com/vDwCzzYX3rCzXGmHaKu7v3nRyVYrQu8gESKQ8YH8RTg5rv8h3Tp39hJHhZVwt-fmdTjqJ5ZA6dCrGwC2w4NF6A68W7ln_TXSL7fFzKg6uFwSqNpbOvg1mScrtAOsIEna3dMDr79xqwPrlnx9YxrngixBQWr8yBNsytMCEUkJEwCZ6imxwdPsFoflCUYrY4wZn7Kjg6uyby5k5QYNjKIhd_SQWW2uRbhG6nzi7D75F7hd4YEBOvN7d7Osj1rZY9MVB3HiSpPx0oakYZX_AfSCWoENmM5yjKtrpiWa8h2FY3zW8ImMMNKCWL-qwl0whVnDpPEG9LB1VvnOLvCIGz7AvK58KSb2uwKAxnEDrzqrjTjdSEtIJ6CI3Ql5MPXKXTMMAEolUNs79rk5DSU24roKp6vE7G4IWnKQotnkWret3OD_5DIKWzTiGe7VL7aTPzMMB94jzhHt7XTkUxaFDnH1lmP280_Q7ZgW0X84dGNlyWB7SnRsrwRmeXRzg9T7zU4F8ze0-cmwug30oPHfnZhrW-Hpie7eEMEahCXeik-SU1sPoOcpAlpUN-wi04sRGyNKy5upYLj0-pd4NYfPzx6j67RiQs6cOk7s6T0IIu3mwy-lNG6cUFh7=w1006-h523-no'/>
+</figure>
+<figure id='coccinelle-ortie-1'><figcaption class='titre'>Une coccinelle qui aime les orties</figcaption>
+<figcaption>Parc du Canal, printemps 2017</figcaption>
+<img alt='une coccinelle qui aime les orties' src='https://lh3.googleusercontent.com/iZcx3sUerSgtUxofKG5akyxgTktka0e7OMt61nHhD3AhDnfdIxEZl91Z9YIAugzo38XZZkDrj877d0rx-k1ddrR3LXngaYAEVLrkTjkvbM_Hvxlh3LqJnEon7xlSdB0HElArfNgznnmAVCoLSjb9U6PJ0Y9fTbDr6Ct9FSGVGKlFeavCWe9ZUxE3tzPWpJPNylNDEFJ7Pe12wi3Uc28rYDK_SzYVMDQlqh0l74McfpvR9ZwI9dVhvXgvOu-3W6Dd7Xwl0uhVfrqN5HUvjefH8O3cmcq7J8iAHS3a-frICKJ9-8vtGlMZBFt2yGaq5C3M5xf1x6lzpOktpkXaM51HV3XZc_POABKmhx8emrUw-AQXsXB16vRZcOyFe5CMMyTE45BsL7HTF_SAjiAOWz8qPNAxd2tevJXqJSlyuy3TIp8qlPl468jvWNe9poU57VovumFe0ZighfyyUBgwR2rfGhmWY8K8C--oWPllZPFJi70RjYwy2Xk_64uI7vfrWaKJpjTi5rXnhIGhIdknoVCjx9rcA88VHpqty3vOsYyMP6o7940xQO57L3l9Zk4TOXm9R0JO9tCLRNOV6hTWLvE_Z0CAypsCiGKT8aA9BTB5eW6HRNpIxsj5=w1006-h503-no'/>
+</figure>
+<figure id='coccinelle-ortie-2'><figcaption class='titre'>La coccinelle n'aime pas être photographiée</figcaption>
+<figcaption>Parc du Canal, printemps 2017</figcaption>
+<img alt='la coccinelle n'aime pas être photographiée' src='https://lh3.googleusercontent.com/GBhqTvGfcBDSSVsfYKWSW7KQYJAixEGfqxmbPCC4CQb75GijJ9j-_KHY9qqy1IQUwLWHcGf-MhB_VYpdvexlzuFYIpjA-9KvV4iNX3A9_An-gY4ORbJ0qcD_SB4DiMRjHQAyQi1x5QCAekj1cXpzexqM9ayC-KNd8arNZ9oDOjtw1B8D-5uhaPFVHSmv24ppC6jrMYhqhXh5jncXZFgsQRmKcWDDD2VBF3OAYadHjEW_0Br5ghhMkt84paguKjAk9C723x-7j7wD2_N_bw32p0KRGPjehvDg2PEv9h4PyJBJ1125HQkfxTuyqV6NrfhywHrZZrwf1_Sr2zjY_89zyZFhIxTwjTY9lZxcXVBw4kqNVB_CaWiRgHJ4dCXRmR2wdbUG7YJ8Wjg4_bS9NLt1TXiuIxfJ6rg95ae-KnxxPrdoECXk0fwYppZ1ArxgApWLnlPG-K8dTgN2_Lv-wofKvgttiRNzkXfqumKdYpa5SvRZeTfcbvuP2ORM2Yg6E9Yp4l2Twiz750p-IJcslBfaRjJIpwkKNZaUShttOv3_l5MXgheCBMSaClSh123yNdOVuoU-pyMuJOQ6HgHZxhh52TT1fTVqLqK0yJ_7BrI2V3IlIZSaGHFs=w1006-h631-no'/>
+</figure>
+</body><script type='text/javascript'>
+// recuperer les figures. la figure 1 correspond a l'image 1, etc...
+var ListeFig = document.getElementsByTagName ('figure');
+var ListeId =[];
+// recuperer les id
+var len = ListeFig.length;
+for (i=0; i< len; i++){ ListeId.push (ListeFig[i].id); }
+
+var CurrentPos =0;	// l'indice de la figure et de l'image
+// figure et image visibles au départ
+var id= ListeId [CurrentPos];
+var figure = document.getElementById (id);
+figure.style.display = 'block';
+
+function DefileFlecheAvant(){
+//	faire disparitre l'ancienne figure
+	figure = document.getElementById (id);
+	figure.style.display = 'none';
+//	faire apparaitre la nouvelle
+	CurrentPos = suivant (ListeId, CurrentPos);
+	id= ListeId [CurrentPos];
+	figure = document.getElementById (id);
+	figure.style.display = 'block';
+	}
+function DefileFlecheArriere(){
+//	faire disparitre l'ancienne figure
+	figure = document.getElementById (id);
+	figure.style.display = 'none';
+//	faire apparaitre la nouvelle
+	CurrentPos = precedent (ListeId, CurrentPos);
+	id= ListeId [CurrentPos];
+	figure = document.getElementById (id);
+	figure.style.display = 'block';
+	}
+DefileFlecheAvant();
+</script></html>
