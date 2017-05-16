@@ -1,7 +1,6 @@
 <!DOCTYPE html><html><head>
 <title>Les parcs de Fontainebleau</title>
 <link rel='stylesheet' href='dpowers-css-github.css'>
-<script type='text/javascript' src='///C:/Users/user/Documents/dw-deborah.js'></script>
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js'></script>
 <meta name='viewport' content="width=device-width;initial-scale=1.0">
 <style>
@@ -9,12 +8,6 @@ figure {
 	display: none;
 	}
 </style></head><body>
-<!--
-pour mettre dans github
-montrer mes compétences en js
-faire un caroussel
-les photos doivent être visibles de tous les ordis -> les prendre sur mon google photo
--->
 <h1>Les parcs de Fontainebleau</h1>
 <p>Ces photos ont été prise dans les parcs de Fontainebleau.</p>
 <p>Ce slide à été réalisé en javascript pur.</p>
@@ -65,6 +58,31 @@ var CurrentPos =0;	// l'indice de la figure et de l'image
 var id= ListeId [CurrentPos];
 var figure = document.getElementById (id);
 figure.style.display = 'block';
+
+function suivant (liste, pos){
+	/* arguments:
+		une liste d'elements
+		une position de la liste
+	action:
+		donner le numero de la case apres pos
+		si pos =0, renvoyer le num du dernier element */
+	var len = liste.length -1;
+	var posSuivant = pos +1;
+	if (pos >= len){ posSuivant =0; }
+	return posSuivant;
+	}
+function precedent (liste, pos){
+	/* arguments:
+		une liste d'elements
+		une position de la liste
+	action:
+		donner le numero de la case avant pos
+		si pos = dernier element, renvoyer 0 */
+	var len = liste.length -1;
+	var posPrecedent = pos -1;
+	if (pos <=0){ posPrecedent = len; }
+	return posPrecedent;
+	}
 
 function DefileFlecheAvant(){
 //	faire disparitre l'ancienne figure
